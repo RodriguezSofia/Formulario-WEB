@@ -1,0 +1,24 @@
+Errores frecuentes con git 
+git add .
+git commit -m ""
+git push origin main
+
+Se crea el .git ignore para evitar un bucle al intentar subir el entorno. 
+
+Error: "ModuleNotFoundError: No module named X"
+Se visualiza si se hizo la correcta instalacion: pip list
+Si no: pip install nombre_paquete
+
+
+Error: git push falla
+Cuando el repositorio remoto tiene cambios que tu local no tiene.
+git pull origin main
+git push origin main
+
+
+Error: Pip instala, pero Python no reconoce el módulo
+Esto indica un problema de entorno virtual.
+Reinstalar el entorno, primero desactivar: deactivate
+Luego eliminarlo: rmdir /s /q mi_entorno_virtual
+Crear uno nuevo: python -m venv mi_entorno_virtual
+Activar: mi_entorno_virtual\Scripts\activate

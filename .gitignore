@@ -1,0 +1,15 @@
+# Entornos virtuales
+venv/
+env/
+.mi_entorno_virtual/
+.venv/
+
+# Archivos de caché
+__pycache__/
+*.pyc
+
+# Configuración local de VS Code
+.vscode/
+
+# Archivos de respaldo o temporales
+*.backup
